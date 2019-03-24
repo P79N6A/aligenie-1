@@ -2,17 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ejs</title>
+  <title>授权</title>
+  <style type="text/css">
+	.container{
+		display: flex;
+		justify-content: center;
+	}
+  </style>
 </head>
 <body>
 
-<form action="/oauth/authorize" method="POST">
-	<input type="hidden" name="client_id" value="<%=client_id%>">
-	<input type="hidden" name="redirect_uri" value="<%=redirect_uri%>">
-	<input type="hidden" name="state" value="<%=state%>">
-	<input type="hidden" name="response_type" value="<%=response_type%>">
-	<input type="submit" name="submit">
-</form>
-
+<div class="container">
+	<span>是否授权访问？</span>
+	<form action="/oauth/authorize" method="POST">
+		<input type="hidden" name="client_id" value="<%=client_id%>">
+		<input type="hidden" name="redirect_uri" value="<%=redirect_uri%>">
+		<input type="hidden" name="state" value="<%=state%>">
+		<input type="hidden" name="response_type" value="<%=response_type%>">
+		<input type="submit" name="submit">
+	</form>
+</div>
 </body>
-</html
+</html"
