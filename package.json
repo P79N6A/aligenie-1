@@ -1,6 +1,12 @@
 {
   "name": "aligenie",
   "version": "1.0.0",
+  "description": "",
+  "license": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "dependencies": {
     "ejs": "^2.6.1",
     "koa": "^2.7.0",
